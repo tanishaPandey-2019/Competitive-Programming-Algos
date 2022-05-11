@@ -11,6 +11,7 @@ void kmpPreProcess(string pattern, vector<int>&lps){
 }
 vector<int> kmpSearch(string text, string pattern){
 	vector<int> ans;
+	
 	vector<int> lps(pattern.size()+1);
 	kmpPreProcess(pattern, lps);
 	int i = 0, j=-1;
